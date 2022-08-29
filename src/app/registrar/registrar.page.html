@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" ></ion-back-button>
+    </ion-buttons>
+    <img id="logo" src="../../assets/img/Logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-title>Registrar</ion-title>
+   <div class="containeragenda">
+      <div id="datos">
+      <ion-item >
+         <ion-label position="floating">Nombre Conductor:</ion-label>
+         <ion-input [(ngModel)]="nombre"></ion-input>
+      </ion-item>
+      <ion-item >
+         <ion-label position="floating">Matricula:</ion-label>
+         <ion-input [(ngModel)]="matricula"></ion-input>
+      </ion-item>
+      <ion-item >
+         <ion-label position="floating">Modelo Auto:</ion-label>
+         <ion-input [(ngModel)]="modelo"></ion-input>
+      </ion-item>
+      <ion-item >
+         <ion-button id="b1" (click)="grabar()" color="primary" expand="full">Guardar</ion-button>
+      </ion-item>
+   </div>
+   </div>
+   
+    
+
+
+<svg id="adorno" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#151515" fill-opacity="1" d="M0,160L1440,0L1440,320L0,320Z"></path></svg>
+    
+</ion-content>

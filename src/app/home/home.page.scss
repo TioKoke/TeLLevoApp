@@ -1,27 +1,82 @@
-#container {
-  text-align: center;
 
+#logo{
+  height: 15%;
+  width: 15%;
+  margin-left: 33.5%;
+  margin-top: 3%;
+}
+
+#icoinfo{
+  height: 32px;
+  width: 32px;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 83%;
+  margin-bottom: 18%;
+  cursor: pointer;
+  transition: 1s;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+#icoinfo:hover{
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  margin-left: 83%;
+  margin-bottom: 18%;
+  cursor: pointer;
+  transition: 1s;
+  transform: scale(1.3);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-content.background{
+  --background: url("../../assets/img/mapa.jpg");
 }
 
-#container a {
+
+.curved{
+  position: absolute;
+  background-color: rgb(21, 21, 21);
+  text-align: center;
+  color: white;
+  margin-top: 425px;
+  height: 180px;
+  width: 100%;
+  
+}
+
+.curved a{
+  background-color: rgb(37, 148, 245);
+  padding: 1.4em;
+  color: white;
   text-decoration: none;
+  border-radius: 45px 45px 45px 45px;
+  border: solid 1px white;
+  cursor: pointer;
+  transition: 1s;
+  
 }
+  
+
+
+.curved a:hover{
+  background-color: rgb(37, 148, 245);
+  padding: 2em;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px 40px 40px 40px;
+  border: solid 1px white;
+  cursor: pointer;
+  transition: 1s;
+  transform: scale(1.5);
+}
+
+.curved h4{
+  margin-top: 14%;
+  font-size: 17px;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*https://getwaves.io/*/
+.curved svg{
+  transform: translateY(-70%);
+}
+

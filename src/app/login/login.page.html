@@ -1,0 +1,22 @@
+
+<ion-content class="Fondo" [fullscreen]="true">
+  <ion-header>
+    <h1><ion-icon [routerLink]="['/inicio']" name="arrow-back-circle"></ion-icon></h1>
+  </ion-header>
+
+  <div id="container">
+    <div class="logo">
+      <img src="../../assets/img/Logo.png">
+    </div>
+    <form action="">
+      <ion-input color="light" placeholder="Nombre de Usuario"></ion-input>
+      <ion-input color="light" type="password" placeholder="Contraseña"></ion-input>
+    </form>
+    <div class="Boton">
+      <ion-button [routerLink]="['/home']" class="btnInicio" color="light" shape="round" fill="outline">Iniciar Sesión</ion-button>
+      <ion-button [routerLink]="['/registrarme']" class="btnInicio" color="light" shape="round" fill="outline">Registrarme</ion-button>
+    </div>
+  </div>
+  
+</ion-content>
+
