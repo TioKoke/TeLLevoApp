@@ -68,7 +68,25 @@ ion-content.background{
   cursor: pointer;
   transition: 1s;
   transform: scale(1.5);
+  border-radius: 40px 40px 40px 40px;
+  border: solid 1px white;
+  cursor: pointer;
+  transition: 1s;
+  transform: scale(1.5);
 }
+
+.curved h4{
+  margin-top: 14%;
+  font-size: 17px;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*https://getwaves.io/*/
+.curved svg{
+  transform: translateY(-70%);
+}
+
+
 
 .curved h4{
   margin-top: 14%;
