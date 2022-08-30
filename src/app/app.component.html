@@ -1,3 +1,57 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="first" contentId="main">
+    
+    <ion-header id="header">
+      <ion-toolbar color="dark">
+        <ion-title style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >Menu</ion-title>
+        <img id="logo" src="../assets/img/Logo.png" alt="">
+      </ion-toolbar>
+    </ion-header>
+    <ion-content id="contentmenu" >
+      <ion-list >
+        <ion-item [routerLink]="['/programarviaje']" >Programar Viaje</ion-item>
+        <ion-item [routerLink]="['/registrar']">Registrar Conductores</ion-item>
+        <ion-item [routerLink]="['/agenda']">Agenda</ion-item>
+        <ion-item >Configuracion</ion-item>
+      </ion-list>
+    </ion-content>
+  
+  </ion-menu>
+
+
+
+
+
+
+
+
+  
+
+  
+  <ion-menu side="end"   menuId="maini" contentId="main">
+    <ion-content >
+      <div class="footer">
+        
+    <img id="logofooter" src="../assets/img/Logo.png" alt="">
+    <p class="copyright">&copy Copyright TeLLevoApp  PlayHouse S.A - 2022</p>
+    
+    <ion-icon id="icoredes" name="logo-instagram"></ion-icon>
+    <ion-icon id="icoredes" name="logo-google-playstore"></ion-icon>
+    <ion-icon id="icoredes" name="logo-linkedin"></ion-icon>
+    <ion-icon id="icoredes" name="logo-apple-appstore"></ion-icon>
+
+
+    <ion-icon id="icouso" name="logo-python"></ion-icon>
+    <ion-icon id="icouso" name="logo-angular"></ion-icon>
+    <ion-icon id="icouso" name="logo-html5"></ion-icon>
+    <ion-icon id="icouso" name="logo-javascript"></ion-icon>
+    <ion-icon id="icouso" name="logo-css3"></ion-icon>
+
+
+      </div>
+    
+    </ion-content>
+    
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

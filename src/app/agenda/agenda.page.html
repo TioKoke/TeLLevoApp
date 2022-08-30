@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" ></ion-back-button>
+    </ion-buttons>
+    <img id="logo" src="../../assets/img/Logo.png" alt="">
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-title>Agenda</ion-title>
+  <ion-list>
+    <!-- for each (recorrer la lista_conductores)-->
+    <ion-item *ngFor="let conductor of lista_conductores">
+      <ion-label>
+        <h2>{{conductor.nombre}}</h2> 
+        <h4>{{conductor.matricula}}</h4>
+        <h4>{{conductor.modelo}}</h4>
+      </ion-label>
+      <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+      <ion-icon name="trash" (click)="mensajeEliminar(conductor.nombre)"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
