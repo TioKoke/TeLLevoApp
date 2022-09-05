@@ -1,3 +1,7 @@
+ion-content{
+  --background: linear-gradient(0deg,rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+  url(../../assets/img/Fondo.jpg) no-repeat center center / cover;
+}
 #container {
   text-align: center;
 
@@ -25,11 +29,12 @@
 #container a {
   text-decoration: none;
 }
-
-.Fondo{
-  --background:url(../../assets/img/Fondo.jpg)0/100% 100% no-repeat;
-}
-
 .logo img{
   width: 70%;
+}
+
+ion-button {
+  --background:rgba(46, 45, 45, 0.918);
+  --border-color: white;
+  --color: white;
 }
