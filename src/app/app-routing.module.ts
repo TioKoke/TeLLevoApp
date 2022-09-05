@@ -44,10 +44,6 @@ const routes: Routes = [
     path: 'olvide-contra',
     loadChildren: () => import('./olvide-contra/olvide-contra.module').then( m => m.OlvideContraPageModule)
   },
-  {
-    path: 'admin',
-    loadChildren: () => import('./admin/admin.module').then( m => m.AdminPageModule)
-  },
   
 ];
 

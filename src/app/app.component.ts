@@ -12,8 +12,8 @@ export class AppComponent {
 
   constructor(private authSvc: AuthService, private router: Router, private afAuth: AngularFireAuth) {}
 
-  cerrarSeccion(){
-    console.log("Seccion Cerrada!");
+  cerrarSesion(){
+    console.log("Sesión Cerrada!");
     this.afAuth.auth.signOut();
     this.router.navigateByUrl("/login");
   }
